@@ -1,0 +1,8 @@
+el juego se infrentan 2 jugadores a cañonasos, el que destrulle primero al otro gana
+
+*se realiza por turnos 
+*utilizar formula parobolica para simular el disparo de la bomba
+*el ajuste debe ser con el movimiento del mouse
+*
+
+
