@@ -19,7 +19,24 @@ namespace Canon_VsCanon
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void finalizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("abrio");
+        }
+
+        private void finalizarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("abrio");
+        }
+
+        private void creditosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Realizado Por \n\r" +
+                            "Salvador Cirino Castrovinci \n\r" +
+                            "Año 2023");
         }
     }
 }

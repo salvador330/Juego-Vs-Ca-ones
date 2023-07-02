@@ -32,9 +32,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.comenzarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.finalizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.finalizarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.creditosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,23 +63,26 @@
             this.finalizarToolStripMenuItem.Name = "finalizarToolStripMenuItem";
             this.finalizarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.finalizarToolStripMenuItem.Text = "Comenzar";
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.finalizarToolStripMenuItem.Click += new System.EventHandler(this.finalizarToolStripMenuItem_Click);
             // 
             // finalizarToolStripMenuItem1
             // 
             this.finalizarToolStripMenuItem1.Name = "finalizarToolStripMenuItem1";
             this.finalizarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.finalizarToolStripMenuItem1.Text = "Finalizar";
+            this.finalizarToolStripMenuItem1.Click += new System.EventHandler(this.finalizarToolStripMenuItem1_Click);
             // 
             // creditosToolStripMenuItem
             // 
             this.creditosToolStripMenuItem.Name = "creditosToolStripMenuItem";
             this.creditosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.creditosToolStripMenuItem.Text = "Creditos";
+            this.creditosToolStripMenuItem.Click += new System.EventHandler(this.creditosToolStripMenuItem_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Form1
             // 
