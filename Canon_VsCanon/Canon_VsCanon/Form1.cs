@@ -24,12 +24,13 @@ namespace Canon_VsCanon
 
         private void finalizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("abrio");
+            
         }
 
         private void finalizarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("abrio");
+           // MessageBox.Show("abrio");
+
         }
 
         private void creditosToolStripMenuItem_Click(object sender, EventArgs e)
