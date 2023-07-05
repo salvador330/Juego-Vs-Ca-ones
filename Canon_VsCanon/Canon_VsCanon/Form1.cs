@@ -24,7 +24,8 @@ namespace Canon_VsCanon
 
         private void finalizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            //cargar panatalla en picture box
+            pictureBox1.Load(@"C:\\Users\\Salvador.Cirino\\Desktop\\Juego\idea.jpg");
         }
 
         private void finalizarToolStripMenuItem1_Click(object sender, EventArgs e)
