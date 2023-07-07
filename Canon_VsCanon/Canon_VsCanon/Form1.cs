@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,8 +25,19 @@ namespace Canon_VsCanon
 
         private void finalizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //cargar panatalla en picture box
-            pictureBox1.Load(@"C:\\Users\\Salvador.Cirino\\Desktop\\Juego\idea.jpg");
+            //abro archivo, lo ubico, agrego pantalla
+            string path= Directory.GetCurrentDirectory().ToString();
+            string pathPosicionado = path.Substring(0,path.Length-37);
+            string pathMasImagen= pathPosicionado+@"idea.jpg";
+
+            //Console.WriteLine(path);
+            //MessageBox.Show(pathMasImagen);
+
+
+
+            pictureBox1.Load(pathMasImagen);
+
+            
         }
 
         private void finalizarToolStripMenuItem1_Click(object sender, EventArgs e)
