@@ -25,13 +25,17 @@ namespace Canon_VsCanon
 
         private void finalizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //abro archivo, lo ubico, agrego pantalla
             string path= Directory.GetCurrentDirectory().ToString();
+            string pathPosicionado = path.Substring(0,path.Length-37);
+            string pathMasImagen= pathPosicionado+@"idea.jpg";
 
-            Console.WriteLine(path);
-            MessageBox.Show(path);
+            //Console.WriteLine(path);
+            //MessageBox.Show(pathMasImagen);
 
-            //cargar panatalla en picture box
-            pictureBox1.Load(@"C:\Users\Salvador\Downloads\Juego-Vs-Ca-ones-master\idea.jpg");
+
+
+            pictureBox1.Load(pathMasImagen);
 
             
         }
