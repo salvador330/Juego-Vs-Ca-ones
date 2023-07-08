@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -40,9 +41,25 @@ namespace Canon_VsCanon
             
         }
 
-        private void finalizarToolStripMenuItem1_Click(object sender, EventArgs e)
+        private  void finalizarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-           // MessageBox.Show("abrio");
+            // MessageBox.Show("abrio");
+            Bitmap b;
+            int y = 0;
+            b = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            pictureBox1.Image = (Image)b;
+            Graphics g = Graphics.FromImage(b);
+
+            //g.DrawLine(Pens.Black, new Point(0, 0), new Point(100, 100));
+            int x = 0;
+            for (int i = 0; i < 500; i++)
+            {
+                y = ((i * i) + i + 100);
+                 g.DrawEllipse(Pens.DarkGreen, new Rectangle(x, y, 30, 30));
+
+                x += 20;
+            }
+            
 
         }
 
