@@ -6,4 +6,30 @@ el juego se infrentan 2 jugadores a cañonasos, el que destrulle primero al otro
 *el tiro se produce al presionar uno boton sobre caño.
 
 
+http://www.sc.ehu.es/sbweb/fisica3/cinematica/curvilineo/curvilineo_3.html
 
+Representamos las trayectorias
+
+v0=60; %velocidad de disparo
+x=200; %posición del blanco
+y=100; 
+g=10; %aceleración de la gravedad
+dis=sqrt((v0^2/(g*x))^2-1-2*v0^2*y/(g*x^2)); 
+th_1=atan(v0^2/(g*x)+dis); %ángulos
+th_2=atan(v0^2/(g*x)-dis);
+disp([th_1*180/pi, th_2*180/pi])
+t1=x/(v0*cos(th_1));%tiempos
+t2=x/(v0*cos(th_2));
+
+hold on
+fill([100,100,250 250],[0,100,100,0],'g') %terreno
+%trayectorias
+fplot(@(t) v0*cos(th_1)*t, @(t) v0*sin(th_1)*t-g*t.^2/2,[0,t1],'color','b')
+t=linspace(0,t2,100);
+x=v0*cos(th_2)*t;
+y=v0*sin(th_2)*t-g*t.^2/2;
+plot(x(x<=100),y(x<=100),'r') %hasta que choca con la pared
+hold off
+xlabel('x (m)')
+ylabel('y (m)')
+title('Tiro parabólico')
