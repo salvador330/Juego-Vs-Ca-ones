@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,7 +21,72 @@ namespace Canon_VsCanon
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void finalizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MostrarPantallauno();
+
+
+
+        }
+
+        private  void finalizarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+           
+            
+
+        }
+
+        private void creditosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Realizado Por \n\r" +
+                            "Salvador Cirino Castrovinci \n\r" +
+                            "Año 2023");
+        }
+
+        private void button3_JugA_Click(object sender, EventArgs e)
+        {
+            // MessageBox.Show("abrio");
+            Bitmap b;
+            int y = 0;
+            b = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            pictureBox1.Image = (Image)b;
+            Graphics g = Graphics.FromImage(b);
+
+            //g.DrawLine(Pens.Black, new Point(0, 0), new Point(100, 100));
+            int x = 0;
+            for (int i = 0; i < 500; i++)
+            {
+                y = ((i * i) + i + 100);
+                g.DrawEllipse(Pens.DarkGreen, new Rectangle(x, y, 30, 30));
+
+                x += 20;
+            }
+
+        }
+
+        private void button4_JugB_Click(object sender, EventArgs e)
+        {
+
+        }
+        /// <summary>
+        /// Funcion Para Mostrar la pantalla numero uno
+        /// </summary>
+        public void MostrarPantallauno()
+        {
+            //abro archivo, lo ubico, agrego pantalla
+            string path = Directory.GetCurrentDirectory().ToString();
+            string pathPosicionado = path.Substring(0, path.Length - 37);
+            string pathMasImagen = pathPosicionado + @"pantallauno.jpg";
+
+            //Console.WriteLine(path);
+            //MessageBox.Show(pathMasImagen);
+
+
+
+            pictureBox1.Load(pathMasImagen);
         }
     }
 }
