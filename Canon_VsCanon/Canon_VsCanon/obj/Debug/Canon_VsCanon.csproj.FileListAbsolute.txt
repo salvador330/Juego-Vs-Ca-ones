@@ -42,3 +42,14 @@ C:\Users\Salvador.Cirino\Desktop\Juego\Juego-Vs-Ca-ones\Canon_VsCanon\Canon_VsCa
 C:\Users\Salvador.Cirino\Desktop\Juego\Juego-Vs-Ca-ones\Canon_VsCanon\Canon_VsCanon\obj\Debug\Canon_VsCanon.csproj.CoreCompileInputs.cache
 C:\Users\Salvador.Cirino\Desktop\Juego\Juego-Vs-Ca-ones\Canon_VsCanon\Canon_VsCanon\obj\Debug\Canon_VsCanon.exe
 C:\Users\Salvador.Cirino\Desktop\Juego\Juego-Vs-Ca-ones\Canon_VsCanon\Canon_VsCanon\obj\Debug\Canon_VsCanon.pdb
+C:\Users\Salvador\Desktop\Juego-Vs-Ca-ones-master\Juego-Vs-Ca-ones\Canon_VsCanon\Canon_VsCanon\bin\Debug\Canon_VsCanon.exe.config
+C:\Users\Salvador\Desktop\Juego-Vs-Ca-ones-master\Juego-Vs-Ca-ones\Canon_VsCanon\Canon_VsCanon\bin\Debug\Canon_VsCanon.exe
+C:\Users\Salvador\Desktop\Juego-Vs-Ca-ones-master\Juego-Vs-Ca-ones\Canon_VsCanon\Canon_VsCanon\bin\Debug\Canon_VsCanon.pdb
+C:\Users\Salvador\Desktop\Juego-Vs-Ca-ones-master\Juego-Vs-Ca-ones\Canon_VsCanon\Canon_VsCanon\obj\Debug\Canon_VsCanon.csproj.AssemblyReference.cache
+C:\Users\Salvador\Desktop\Juego-Vs-Ca-ones-master\Juego-Vs-Ca-ones\Canon_VsCanon\Canon_VsCanon\obj\Debug\Canon_VsCanon.csproj.SuggestedBindingRedirects.cache
+C:\Users\Salvador\Desktop\Juego-Vs-Ca-ones-master\Juego-Vs-Ca-ones\Canon_VsCanon\Canon_VsCanon\obj\Debug\Canon_VsCanon.Form1.resources
+C:\Users\Salvador\Desktop\Juego-Vs-Ca-ones-master\Juego-Vs-Ca-ones\Canon_VsCanon\Canon_VsCanon\obj\Debug\Canon_VsCanon.Properties.Resources.resources
+C:\Users\Salvador\Desktop\Juego-Vs-Ca-ones-master\Juego-Vs-Ca-ones\Canon_VsCanon\Canon_VsCanon\obj\Debug\Canon_VsCanon.csproj.GenerateResource.cache
+C:\Users\Salvador\Desktop\Juego-Vs-Ca-ones-master\Juego-Vs-Ca-ones\Canon_VsCanon\Canon_VsCanon\obj\Debug\Canon_VsCanon.csproj.CoreCompileInputs.cache
+C:\Users\Salvador\Desktop\Juego-Vs-Ca-ones-master\Juego-Vs-Ca-ones\Canon_VsCanon\Canon_VsCanon\obj\Debug\Canon_VsCanon.exe
+C:\Users\Salvador\Desktop\Juego-Vs-Ca-ones-master\Juego-Vs-Ca-ones\Canon_VsCanon\Canon_VsCanon\obj\Debug\Canon_VsCanon.pdb

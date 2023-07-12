@@ -46,24 +46,37 @@ namespace Canon_VsCanon
                             "Año 2023");
         }
 
-        private void button3_JugA_Click(object sender, EventArgs e)
+        private async void button3_JugA_Click(object sender, EventArgs e)
         {
             // MessageBox.Show("abrio");
-            Bitmap b;
-            int y = 0;
-            b = new Bitmap(pictureBox1.Width, pictureBox1.Height);
-            pictureBox1.Image = (Image)b;
-            Graphics g = Graphics.FromImage(b);
+            //Bitmap b;
+            //int y = 0;
+            //b = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            //pictureBox1.Image = (Image)b;
+            //Graphics g = Graphics.FromImage(b);
 
-            //g.DrawLine(Pens.Black, new Point(0, 0), new Point(100, 100));
-            int x = 0;
-            for (int i = 0; i < 500; i++)
+            ////g.DrawLine(Pens.Black, new Point(0, 0), new Point(100, 100));
+            //int x = 0;
+            //for (int i = 0; i < 500; i++)
+            //{
+            //    y = ((i * i) + i + 100);
+            //    g.DrawEllipse(Pens.DarkGreen, new Rectangle(x, y, 30, 30));
+
+            //    x += 20;
+            //}
+ 
+
+            int x = 0, y=0;
+            for (int i = 0; i < 10; i++)
             {
                 y = ((i * i) + i + 100);
-                g.DrawEllipse(Pens.DarkGreen, new Rectangle(x, y, 30, 30));
+                MonstrarBomba(y, 200);
+                await Task.Delay(10);
 
                 x += 20;
             }
+
+            
 
         }
 
@@ -87,6 +100,23 @@ namespace Canon_VsCanon
 
 
             pictureBox1.Load(pathMasImagen);
+        }
+
+        public void MonstrarBomba(int x, int y)
+        {
+            //abro archivo, lo ubico, agrego pantalla
+            string path = Directory.GetCurrentDirectory().ToString();
+            string pathPosicionado = path.Substring(0, path.Length - 37);
+            string pathMasImagen = pathPosicionado + @"bomba.jpg";
+
+            //Console.WriteLine(path);
+            //MessageBox.Show(pathMasImagen);
+
+
+
+            pictureBox2_Bomba.Load(pathMasImagen);
+            pictureBox2_Bomba.Location=new Point(x, y);
+            
         }
     }
 }

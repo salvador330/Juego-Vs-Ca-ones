@@ -42,8 +42,10 @@
             this.button4_JugB = new System.Windows.Forms.Button();
             this.button5_JugB = new System.Windows.Forms.Button();
             this.button6_JugB = new System.Windows.Forms.Button();
+            this.pictureBox2_Bomba = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2_Bomba)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -156,11 +158,20 @@
             this.button6_JugB.Text = "-";
             this.button6_JugB.UseVisualStyleBackColor = true;
             // 
+            // pictureBox2_Bomba
+            // 
+            this.pictureBox2_Bomba.Location = new System.Drawing.Point(211, 327);
+            this.pictureBox2_Bomba.Name = "pictureBox2_Bomba";
+            this.pictureBox2_Bomba.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2_Bomba.TabIndex = 8;
+            this.pictureBox2_Bomba.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(973, 500);
+            this.Controls.Add(this.pictureBox2_Bomba);
             this.Controls.Add(this.button4_JugB);
             this.Controls.Add(this.button5_JugB);
             this.Controls.Add(this.button6_JugB);
@@ -179,6 +190,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2_Bomba)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,6 +211,7 @@
         private System.Windows.Forms.Button button4_JugB;
         private System.Windows.Forms.Button button5_JugB;
         private System.Windows.Forms.Button button6_JugB;
+        private System.Windows.Forms.PictureBox pictureBox2_Bomba;
     }
 }
 
