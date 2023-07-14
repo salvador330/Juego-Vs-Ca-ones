@@ -19,6 +19,9 @@ namespace Canon_VsCanon
             InitializeComponent();
         }
 
+        Jugador JugadorA = new Jugador("JugadorA");
+        Jugador JugadorB = new Jugador("JugadorB");
+
         private void Form1_Load(object sender, EventArgs e)
         {
             
@@ -27,8 +30,13 @@ namespace Canon_VsCanon
         private void finalizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MostrarPantallauno();
+            JugadorA.PosX = 100;
+            JugadorA.PosY = 100;
+            JugadorA.Angulo = 0;
 
-
+            JugadorB.PosX = 100;
+            JugadorB.PosY = 200;
+            JugadorB.Angulo = 0;
 
         }
 
@@ -64,22 +72,24 @@ namespace Canon_VsCanon
 
             //    x += 20;
             //}
- 
 
+            button3_JugA.Enabled = false;
             int x = 0, y=0;
             for (int i = 0; i < 80; i++)
             {
 
                 //y = ((i * i) + i + 100);  //tiro como parabola
-                y = y + 10;// tiro recto
+                //y = y + 10;// tiro recto
 
-                MonstrarBomba(y+50, 200);
+
+                MonstrarBomba(x+50, 260);
                 await Task.Delay(10);
 
-                x += 20;
+                x += 10;
             }
+            button3_JugA.Enabled = true;
 
-            
+
 
         }
 
@@ -116,6 +126,19 @@ namespace Canon_VsCanon
             pictureBox2_Bomba.Load(pathMasImagen);
             pictureBox2_Bomba.Location=new Point(x, y);
             pictureBox2_Bomba.BackColor = Color.Transparent;
+        }
+
+        private void button2_JugA_Click(object sender, EventArgs e)
+        {
+            JugadorA.Angulo = JugadorA.Angulo + 2;
+           
+           
+        }
+
+        private void button1_JugA_Click(object sender, EventArgs e)
+        {
+            JugadorA.Angulo= JugadorA.Angulo - 2;
+           
         }
     }
 }

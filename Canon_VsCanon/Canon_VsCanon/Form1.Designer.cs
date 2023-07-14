@@ -96,9 +96,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 36);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(949, 450);
+            this.pictureBox1.Size = new System.Drawing.Size(918, 450);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -110,6 +110,7 @@
             this.button1_JugA.TabIndex = 2;
             this.button1_JugA.Text = "-";
             this.button1_JugA.UseVisualStyleBackColor = true;
+            this.button1_JugA.Click += new System.EventHandler(this.button1_JugA_Click);
             // 
             // button2_JugA
             // 
@@ -119,6 +120,7 @@
             this.button2_JugA.TabIndex = 3;
             this.button2_JugA.Text = "+";
             this.button2_JugA.UseVisualStyleBackColor = true;
+            this.button2_JugA.Click += new System.EventHandler(this.button2_JugA_Click);
             // 
             // button3_JugA
             // 
