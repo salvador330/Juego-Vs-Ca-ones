@@ -160,7 +160,7 @@
             // 
             // pictureBox2_Bomba
             // 
-            this.pictureBox2_Bomba.Location = new System.Drawing.Point(211, 327);
+            this.pictureBox2_Bomba.Location = new System.Drawing.Point(235, 545);
             this.pictureBox2_Bomba.Name = "pictureBox2_Bomba";
             this.pictureBox2_Bomba.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2_Bomba.TabIndex = 8;
@@ -170,7 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(973, 500);
+            this.ClientSize = new System.Drawing.Size(973, 478);
             this.Controls.Add(this.pictureBox2_Bomba);
             this.Controls.Add(this.button4_JugB);
             this.Controls.Add(this.button5_JugB);

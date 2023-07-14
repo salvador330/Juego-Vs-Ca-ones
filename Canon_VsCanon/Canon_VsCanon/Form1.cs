@@ -67,10 +67,13 @@ namespace Canon_VsCanon
  
 
             int x = 0, y=0;
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 80; i++)
             {
-                y = ((i * i) + i + 100);
-                MonstrarBomba(y, 200);
+
+                //y = ((i * i) + i + 100);  //tiro como parabola
+                y = y + 10;// tiro recto
+
+                MonstrarBomba(y+50, 200);
                 await Task.Delay(10);
 
                 x += 20;
@@ -92,10 +95,7 @@ namespace Canon_VsCanon
             //abro archivo, lo ubico, agrego pantalla
             string path = Directory.GetCurrentDirectory().ToString();
             string pathPosicionado = path.Substring(0, path.Length - 37);
-            string pathMasImagen = pathPosicionado + @"pantallauno.jpg";
-
-            //Console.WriteLine(path);
-            //MessageBox.Show(pathMasImagen);
+            string pathMasImagen = pathPosicionado + @"pantallauno.png";
 
 
 
@@ -107,16 +107,15 @@ namespace Canon_VsCanon
             //abro archivo, lo ubico, agrego pantalla
             string path = Directory.GetCurrentDirectory().ToString();
             string pathPosicionado = path.Substring(0, path.Length - 37);
-            string pathMasImagen = pathPosicionado + @"bomba.jpg";
-
-            //Console.WriteLine(path);
-            //MessageBox.Show(pathMasImagen);
+            string pathMasImagen = pathPosicionado + @"bomba.png";
 
 
 
+            //solucion a imagen se ve reborde gris
+            pictureBox1.Controls.Add(pictureBox2_Bomba);
             pictureBox2_Bomba.Load(pathMasImagen);
             pictureBox2_Bomba.Location=new Point(x, y);
-            
+            pictureBox2_Bomba.BackColor = Color.Transparent;
         }
     }
 }
