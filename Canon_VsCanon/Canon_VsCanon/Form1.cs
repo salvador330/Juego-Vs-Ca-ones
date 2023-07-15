@@ -74,18 +74,19 @@ namespace Canon_VsCanon
             //}
 
             button3_JugA.Enabled = false;
-            int x = 0, y=0;
-            for (int i = 0; i < 80; i++)
+            double y=0, x=0;
+            while (x < 80 && y>=0)
             {
 
                 //y = ((i * i) + i + 100);  //tiro como parabola
                 //y = y + 10;// tiro recto
 
-
-                MonstrarBomba(x+50, 260);
+                y = x * 10 - (10*(x*x)/2);
+                Console.WriteLine(Math.Round(x)+" "+Math.Round (y));
+                MonstrarBomba(Convert.ToInt32(x)*10, Convert.ToInt32( y)*10);
                 await Task.Delay(10);
-
-                x += 10;
+                x=x+0.1;
+               
             }
             button3_JugA.Enabled = true;
 
