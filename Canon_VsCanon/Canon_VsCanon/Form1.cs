@@ -74,18 +74,28 @@ namespace Canon_VsCanon
             //}
 
             button3_JugA.Enabled = false;
-            double y=0, x=0;
-            while (x < 80 && y>=0)
+            int y=290, x=90;
+            while (x < 900)  //(x < 900 && y>=0 && y<300)
             {
+                if (x<350)
+                {
+                    y = y - JugadorA.Angulo;
+                }
+                if (x>350)
+                {
+                    y = y + JugadorA.Angulo;
+                }
 
                 //y = ((i * i) + i + 100);  //tiro como parabola
                 //y = y + 10;// tiro recto
 
-                y = x * 10 - (10*(x*x)/2);
-                Console.WriteLine(Math.Round(x)+" "+Math.Round (y));
-                MonstrarBomba(Convert.ToInt32(x)*10, Convert.ToInt32( y)*10);
+                //y = x * 10 - (10*(x*x)/2);
+                //Console.WriteLine(Math.Round(x*100)+" "+Math.Round (y*100));
+                //MostrarBomba(Convert.ToInt32(x),300+ Convert.ToInt32( y));
+                //MostrarBomba(100, 290);
+                MostrarBomba(x, y);
                 await Task.Delay(10);
-                x=x+0.1;
+                x=x+10;
                
             }
             button3_JugA.Enabled = true;
@@ -113,7 +123,7 @@ namespace Canon_VsCanon
             pictureBox1.Load(pathMasImagen);
         }
 
-        public void MonstrarBomba(int x, int y)
+        public void MostrarBomba(int x, int y)
         {
             //abro archivo, lo ubico, agrego pantalla
             string path = Directory.GetCurrentDirectory().ToString();
