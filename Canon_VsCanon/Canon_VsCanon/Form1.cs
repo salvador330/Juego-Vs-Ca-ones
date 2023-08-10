@@ -32,7 +32,7 @@ namespace Canon_VsCanon
             MostrarPantallauno();
             JugadorA.PosX = 100;
             JugadorA.PosY = 100;
-            JugadorA.Angulo = 0;
+            JugadorA.Angulo = 40;
 
             JugadorB.PosX = 100;
             JugadorB.PosY = 200;
@@ -74,17 +74,17 @@ namespace Canon_VsCanon
             //}
 
             button3_JugA.Enabled = false;
-            int y=290, x=90;
+            double y=290, x=0;
             while (x < 900)  //(x < 900 && y>=0 && y<300)
             {
-                if (x<350)
-                {
-                    y = y - JugadorA.Angulo;
-                }
-                if (x>350)
-                {
-                    y = y + JugadorA.Angulo;
-                }
+                //if (x<350)
+                //{
+                //    y = y - JugadorA.Angulo;
+                //}
+                //if (x>350)
+                //{
+                //    y = y + JugadorA.Angulo;
+                //}
 
                 //y = ((i * i) + i + 100);  //tiro como parabola
                 //y = y + 10;// tiro recto
@@ -93,9 +93,11 @@ namespace Canon_VsCanon
                 //Console.WriteLine(Math.Round(x*100)+" "+Math.Round (y*100));
                 //MostrarBomba(Convert.ToInt32(x),300+ Convert.ToInt32( y));
                 //MostrarBomba(100, 290);
-                MostrarBomba(x, y);
+
+                y = (30 * Math.Sin((JugadorA.Angulo * Math.PI) / 180)) * x - ((9.8*Math.Pow(x,2))/2);
+                MostrarBomba((int)x+90, (int)y);
                 await Task.Delay(10);
-                x=x+10;
+                x=x+1;
                
             }
             button3_JugA.Enabled = true;
@@ -141,14 +143,14 @@ namespace Canon_VsCanon
 
         private void button2_JugA_Click(object sender, EventArgs e)
         {
-            JugadorA.Angulo = JugadorA.Angulo + 2;
+            JugadorA.Angulo = JugadorA.Angulo + 5;
            
            
         }
 
         private void button1_JugA_Click(object sender, EventArgs e)
         {
-            JugadorA.Angulo= JugadorA.Angulo - 2;
+            JugadorA.Angulo= JugadorA.Angulo - 5;
            
         }
     }
