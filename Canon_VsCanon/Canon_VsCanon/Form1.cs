@@ -32,7 +32,7 @@ namespace Canon_VsCanon
             MostrarPantallauno();
             JugadorA.PosX = 100;
             JugadorA.PosY = 100;
-            JugadorA.Angulo = 40;
+            JugadorA.Angulo = 45;
 
             JugadorB.PosX = 100;
             JugadorB.PosY = 200;
@@ -96,7 +96,7 @@ namespace Canon_VsCanon
 
                 y = (30 * Math.Sin((JugadorA.Angulo * Math.PI) / 180)) * x - ((9.8*Math.Pow(x,2))/2);
                 //MostrarBomba((int)x+90, (int)y);
-                MostrarBomba((int)x, 300+((int)(y/1000)));
+                MostrarBomba((int)x, 300+((int)(y/100)));
                  await Task.Delay(10);
                 x=x+3;
                
