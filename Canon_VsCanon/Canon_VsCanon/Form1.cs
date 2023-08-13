@@ -95,9 +95,10 @@ namespace Canon_VsCanon
                 //MostrarBomba(100, 290);
 
                 y = (30 * Math.Sin((JugadorA.Angulo * Math.PI) / 180)) * x - ((9.8*Math.Pow(x,2))/2);
-                MostrarBomba((int)x+90, (int)y);
-                await Task.Delay(10);
-                x=x+1;
+                //MostrarBomba((int)x+90, (int)y);
+                MostrarBomba((int)x, 300+((int)(y/1000)));
+                 await Task.Delay(10);
+                x=x+3;
                
             }
             button3_JugA.Enabled = true;
