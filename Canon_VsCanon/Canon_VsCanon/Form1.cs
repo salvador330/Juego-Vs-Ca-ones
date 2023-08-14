@@ -75,7 +75,7 @@ namespace Canon_VsCanon
 
             button3_JugA.Enabled = false;
             double y=290, x=0;
-            while (x < 900)  //(x < 900 && y>=0 && y<300)
+            while (x < 40)  //(x < 900 && y>=0 && y<300)
             {
                 //if (x<350)
                 //{
@@ -96,9 +96,11 @@ namespace Canon_VsCanon
 
                 y = (30 * Math.Sin((JugadorA.Angulo * Math.PI) / 180)) * x - ((9.8*Math.Pow(x,2))/2);
                 //MostrarBomba((int)x+90, (int)y);
-                MostrarBomba((int)x, 300+((int)(y/100)));
+                //debo incremetar x dependiendo del angulo
+                //debo multiplicar a x*n veces para adaptarlo
+                MostrarBomba((int)x*10, 300+((int)(y/100)));
                  await Task.Delay(10);
-                x=x+3;
+                x=x+0.4;
                
             }
             button3_JugA.Enabled = true;
