@@ -81,8 +81,8 @@ namespace Canon_VsCanon
                 //MostrarBomba((int)x+90, (int)y);
                 //debo incremetar x dependiendo del angulo
                 //debo multiplicar a x*n veces para adaptarlo
-                //idea de crear una funcion que realiza porpocionalidad de x,y,t
-                //x+Px.x   y+Px.x   t+Px.t
+                //idea de crear una clase que realiza porpocionalidad de x,y,t dependiendo del angulo
+                //px.a=angulo  =>  x+Px.x   y+Px.x   t+Px.t
 
                 MostrarBomba((int)x*10, 300+((int)(y/100)));
                  await Task.Delay(10);
